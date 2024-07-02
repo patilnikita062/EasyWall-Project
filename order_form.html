@@ -139,7 +139,7 @@
                         <input type="text" name="expirydate" id="expirydate"></label>
                 </div>
             </div>
-            <button class='btn' value="Place Order"><a class="txt" href="placed.html">Place Order</button></a>
+            <button class='btn' value="Place Order"><a class="txt" href="place_order.html">Place Order</button></a>
 
 
 
@@ -165,6 +165,9 @@
         function online_mode() {
             if (payment_mode.value == 'Credit & Debit Cards') {
                 document.getElementById('enable').style.display = 'block'
+            }
+            else{
+                document.getElementById('enable').style.display = 'none'
             }
 
         }
